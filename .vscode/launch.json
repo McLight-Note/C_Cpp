@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/mclight/Downloads/GitHub/C:C++/C_Cpp/Lesson-3",
-      "program": "/Users/mclight/Downloads/GitHub/C:C++/C_Cpp/Lesson-3/build/Debug/outDebug"
+      "cwd": "/Users/mclight/Downloads/GitHub/C:C++/C_Cpp",
+      "program": "/Users/mclight/Downloads/GitHub/C:C++/C_Cpp"
     }
   ]
 }
