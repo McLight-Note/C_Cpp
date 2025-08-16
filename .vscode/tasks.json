@@ -1,0 +1,40 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-g",
+        "-o",
+        "main",
+        "main.c"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "options": {
+        "cwd": "${workspaceFolder}/Lesson-5"
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "build-current",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-g",
+        "-o",
+        "${fileBasenameNoExtension}",
+        "${file}"
+      ],
+      "group": "build",
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}

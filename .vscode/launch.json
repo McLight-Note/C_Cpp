@@ -2,12 +2,26 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "C/C++ Runner: Debug Session",
+      "name": "Debug C Program",
       "type": "lldb",
       "request": "launch",
+      "program": "${workspaceFolder}/Lesson-5/main",
       "args": [],
-      "cwd": "/Users/mclight/Downloads/GitHub/C:C++/C_Cpp",
-      "program": "/Users/mclight/Downloads/GitHub/C:C++/C_Cpp"
-    }
+      "cwd": "${workspaceFolder}/Lesson-5",
+      "preLaunchTask": "build",
+      "stopOnEntry": false,
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Debug Current Lesson",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "preLaunchTask": "build-current",
+      "stopOnEntry": false,
+      "console": "integratedTerminal"
+
   ]
 }
