@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <string.h>
 
 int main(){
     
@@ -8,10 +9,24 @@ int main(){
     char grade = '\0';
     char name[30] = "";
 
-    printf("%d\n", age);
-    printf("%d\n", gpa);
-    printf("%c\n", grade);
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    printf("Enter your gpa: ");
+    scanf("%f", &gpa);
+
+    printf("Enter your grade: ");
+    scanf(" %c", &grade);
+
+    getchar();
+    printf("Enter your full name: ");
+    fgets(name, sizeof(name), stdin);
+    name[strlen(name) - 1] = "\0";
+
     printf("%s\n", name);
+    printf("%d\n", age);
+    printf("%.2f\n", gpa);
+    printf("%c\n", grade);
 
     return 0;
 }
