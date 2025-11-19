@@ -7,20 +7,20 @@ namespace _7_Lesson
         static void Main(string[] args)
         {
             Console.Write("Enter a word: ");
-            String word = Console.ReadLine();
+            string word = Console.ReadLine();
 
-            if (word.Length <= 1)
+            if (string.IsNullOrEmpty(word) || word.Length == 1)
             {
                 Console.WriteLine(word);
                 return;
             }
 
-            Char first = word[0];
-            Char last = word[word.Length - 1];
+            char first = word[0];
+            char last = word[word.Length - 1];
 
-            String middle = word.Substring(1, word.Length - 2);
+            string middle = word.Substring(1, word.Length - 2);
 
-            String result = last + middle + first;
+            string result = last + middle + first;
 
             Console.WriteLine("New word: " + result);
         }
